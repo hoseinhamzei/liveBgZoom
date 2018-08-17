@@ -1,5 +1,5 @@
 # liveBgZoom
-LiveBgZoom is a low size and simple js library to add zoomin animation to your html elements backgrounds.
+LiveBgZoom is a low size and simple js library to zoom in and out your elements backgrounds on hover.
 [demo](https://livebgzoomdemo.netlify.com/)
 
 # add to webpage
