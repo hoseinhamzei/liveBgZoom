@@ -28,6 +28,7 @@ add 'lbg-container' class to the element you want and specify the zoom speed wit
 ```
 <div class="lbg-container zoom-speed-normal"></div>
 ```
+## then customize css file to set background image
 
 
 
