@@ -30,7 +30,7 @@ add 'lbg-container' class to the element you want and specify the zoom speed wit
 ```
 ### then customize css file to set background image
 
-### you can also easily set the amount of zoom, open livebg.js and change zoomAmount (must be more than 100% default is 150%):
+### (optional)you can also easily change the amount of zoom, open livebg.js and change zoomAmount (must be more than 100%, default is 150%):
 ```
     var zoomAmount = "200%";
     
