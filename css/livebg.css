@@ -1,0 +1,43 @@
+body,html{
+    min-width: 100%;
+    min-height: 100% !important;
+    height: 100%;
+    margin: 0;
+}
+
+.lbg-container{
+    /*set custom size*/
+    width: 70%;
+    height: 70%;
+    /*set custom background image*/
+    background-image:url(https://images.pexels.com/photos/97077/pexels-photo-97077.jpeg);
+    
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+    
+}
+
+
+.zoom-speed-slow{
+    transition: background-size 0.7s ease;
+}
+
+
+.zoom-speed-normal{
+    transition: background-size 0.3s ease;
+}
+
+
+.zoom-speed-fast{
+    transition: background-size 0.1s ease;
+}
+
+.zoom-speed-none{
+    transition: none;
+}
