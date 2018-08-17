@@ -6,10 +6,12 @@ LiveBgZoom is a low size and simple js library to add zoomin animation to your h
 
 1-download zip file and extract in your webpage directory
 2-add jquery and css and js file to html file:
-in <head>:
+:
   
 ```
+<head>
 <link rel="stylesheet" href="css/livebg.css" />
+</head>
 ```
 at the end of body:
   
