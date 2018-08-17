@@ -9,11 +9,13 @@ body,html{
     /*set custom size*/
     width: 70%;
     height: 70%;
-    /*set custom background image*/
+    /*set custom background image(here is a sample image from pexels)*/
     background-image:url(https://images.pexels.com/photos/97077/pexels-photo-97077.jpeg);
     
     background-size: 100%;
+    /*set custom background repeat*/
     background-repeat: no-repeat;
+    /*default zoom speed*/
     transition: background-size 0.3s ease;
     margin-left: auto;
     margin-right: auto;
@@ -25,19 +27,19 @@ body,html{
 
 
 .zoom-speed-slow{
-    transition: background-size 0.7s ease;
+    transition: background-size 0.7s ease !important;
 }
 
 
 .zoom-speed-normal{
-    transition: background-size 0.3s ease;
+    transition: background-size 0.3s ease !important;
 }
 
 
 .zoom-speed-fast{
-    transition: background-size 0.1s ease;
+    transition: background-size 0.1s ease !important;
 }
 
 .zoom-speed-none{
-    transition: none;
+    transition: none !important;
 }
