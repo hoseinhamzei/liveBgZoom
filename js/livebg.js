@@ -10,7 +10,10 @@ $(".lbg-container").mousemove(function(event) {
     
     var bgposti = x+"%" + " " + y+"%";
     
-    $(this).css({"background-position": bgposti,"background-size":"150%"});
+    //// SET ZOOM AMOUNT HERE ////
+    var zoomAmount = "150%";
+    
+    $(this).css({"background-position": bgposti,"background-size":zoomAmount});
     
 });
 
