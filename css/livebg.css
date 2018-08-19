@@ -9,10 +9,11 @@ body,html{
     /*set custom size*/
     width: 70%;
     height: 70%;
-    /*set custom background image(here is a sample image from pexels)*/
-    background-image:url(https://images.pexels.com/photos/97077/pexels-photo-97077.jpeg);
+    /*set custom background image*/
+    background-image:url(https://images.pexels.com/photos/356807/pexels-photo-356807.jpeg);
     
-    background-size: 100%;
+    
+    
     /*set custom background repeat*/
     background-repeat: no-repeat;
     /*default zoom speed*/
