@@ -1,5 +1,18 @@
 
-var x,y;
+
+$(document).ready(function(){
+    
+    
+    
+    
+    var x,y;
+var zoomAmount = "50%";
+
+
+
+        
+    
+
 
 
 $(".lbg-container").each(function() {
@@ -8,8 +21,24 @@ $(".lbg-container").each(function() {
     var offset = $(this).offset();
     var width = $(this).width();
     var height = $(this).height();
+    var coverSize;
     
-    $(this).css({"background-position": "center center","background-size":`${width+height/2}px`});
+    if($(this).attr("id") !== null && $(this).attr("id") !== "" && typeof $(this).attr("id") !== 'undefined'){
+    zoomAmount = $(this).attr("id");
+    console.error(zoomAmount);
+    }
+    else{
+        console.error('.lbg-container: no id detected or id is not in correct form id must be a percentage more than 0% like id="50%" setting zoom amount to default value...');
+    }
+    
+    if(width > height || width === height){
+        coverSize = width+height/2;
+    }else if(height > width){
+        coverSize = width/1.5+height;
+    }
+    
+    
+    $(this).css({"background-position": "center center","background-size":coverSize+'px'});
     
     $(this).mousemove(function(event){
         
@@ -19,11 +48,13 @@ $(".lbg-container").each(function() {
     var bgposti = x+"%" + " " + y+"%";
         
         
-        /// ENTER CUSTOM ZOOM AMOUNT ///
-        var zoomAmount = "50%";
         
         
-    var sum = width+height/2;
+        
+        
+    
+        
+    var sum = coverSize;
     sum += sum * (parseFloat(zoomAmount)/100);    
         
     $(this).css({"background-position": bgposti,"background-size":sum+"px"});
@@ -32,8 +63,16 @@ $(".lbg-container").each(function() {
     
     
     $(this).mouseleave(function(){
-    $(this).css({"background-position": "center center","background-size":`${width+height/2}px`});
+    $(this).css({"background-position": "center center","background-size":coverSize+'px'});
 });
+    
+    
+    
+    
+});
+
+    
+    
     
     
     
