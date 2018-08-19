@@ -25,16 +25,16 @@ add 'lbg-container' class to the element you want and specify the zoom speed wit
 * -zoom-speed-normal
 * -zoom-speed-fast
 * -zoom-speed-none(remove zoom animation)
-```
-<div class="lbg-container zoom-speed-normal"></div>
-```
-### then customize css file to set background image
 
-### (optional)you can also easily change the amount of zoom, open livebg.js and change zoomAmount:
+### you can also set zoom amount in percentages in id tag (more than 0%):
 ```
-    var zoomAmount = "50%";
-    
+<div class="lbg-container zoom-speed-normal" id="20%"></div>
 ```
+### then override sample background-image
+
+
+
+
 
 
 
