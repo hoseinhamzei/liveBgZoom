@@ -26,8 +26,10 @@ add 'lbg-container' class to the elements you want to have zoom effect and speci
 * -zoom-speed-fast
 * -zoom-speed-none(remove zoom animation)
 
-### you can also set zoom amount in percentages in id tag (more than 0%) the default is 50% if you don't set id:
+### you can also set zoom amount in percentages in id tag:
 ```
+<!---(more than 0%) the default zoom amount is 50% if you don't set id--->
+
 <div class="lbg-container zoom-speed-normal" id="20%"></div>
 ```
 ### then override sample background-image
