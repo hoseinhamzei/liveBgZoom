@@ -20,13 +20,13 @@ at the end of body:
 <script src="js/livebg.js"></script>
 ```
 # usage
-add 'lbg-container' class to the element you want and specify the zoom speed with one of the following classes(the default speed is normal you can set custom speed in livebg.css file and remove zoom-speed class):
+add 'lbg-container' class to the elements you want to have zoom effect and specify the zoom speed with one of the following classes(the default speed is normal you can set custom speed in livebg.css file and remove zoom-speed class):
 * -zoom-speed-slow
 * -zoom-speed-normal
 * -zoom-speed-fast
 * -zoom-speed-none(remove zoom animation)
 
-### you can also set zoom amount in percentages in id tag (more than 0%):
+### you can also set zoom amount in percentages in id tag (more than 0%) the default is 50% if you don't set id:
 ```
 <div class="lbg-container zoom-speed-normal" id="20%"></div>
 ```
